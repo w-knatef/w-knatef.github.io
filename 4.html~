@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithme - GPS Multimodal</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="images/CY.jpg" alt="Logo CY Cergy Paris Université" class="logo" />
+        <h1>Algorithme et Critères</h1>
+    </header>
+
+    <main>
+        <section class="card">
+
+            <p>
+                Le cœur du projet repose sur un algorithme de recherche de chemin (type Dijkstra ou A*) 
+                appliqué à un graphe pondéré.
+            </p>
+
+            <h2>Critères utilisateur</h2>
+            <ul class="features">
+                <li><strong>⏱️ Le plus rapide :</strong> Minimise le temps (combine Métro + Bateau).</li>
+                <li><strong>💰 Le moins cher :</strong> Favorise Marche, Vélo et Bus.</li>
+                <li><strong>🌍 Touristique :</strong> Ajoute des étapes clés (Monuments, Lac).</li>
+            </ul>
+
+            <img src="images/graphe_algo.png" alt="Représentation du graphe" class="illustration" />
+            <p class="caption">Modélisation : Sommets (Lieux) et Arêtes (Trajets).</p>
+
+            <p>
+                L'algorithme filtre les arêtes en fonction des transports autorisés et recalcule 
+                les poids selon le critère choisi (Temps vs Coût).
+            </p>
+
+            <h2>Représentation technique</h2>
+            <ul class="features">
+                <li>Sommets : Arrêts de bus, stations, lieux-dits.</li>
+                <li>Arêtes : Chemins avec attributs (Temps, Coût, Type).</li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="3.html" class="btn secondary">← Modélisation</a>
+                <a href="5.html" class="btn">IHM →</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        © 2026 - Projet GPS Multimodal | CY Cergy Paris Université
+    </footer>
+
+</body>
+</html>
